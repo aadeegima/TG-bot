@@ -1,7 +1,7 @@
 import os
 import telebot
 
-bot = telebot.TeleBot("7937720717:AAFrNdb4lTKa25AzN36qWQyHWCdoCytqtT8")
+bot = telebot.TeleBot("8520268519:AAEzpbKfnlOff9o-PXUnN5BmXWykoYI_cm8")
 
 @bot.massage_handler(commands=["start"])
 def send_welcome(massage):
@@ -10,5 +10,6 @@ def send_welcome(massage):
     @bot.massage_handler(command=["channels"])
     def send_massage(massage):
         bot.send_massage(massage, "Meme channel - t.me/athal_hub")
+
 
         bot.polling()
